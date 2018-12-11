@@ -1,0 +1,15 @@
+{
+    "id": "921df78c-3745-47a6-a4d7-21f84c114860",
+    "version": "1.0.0",
+    "requiredApiVersion": "1.2.1",
+    "iconFile": "icon.jpg",
+    "author": {
+        "name": "Thomas Gardner",
+        "homepage": "https://github.com/tgardner851",
+        "support": "https://github.com/tgardner851/Rocket.Chat.App-doge"
+    },
+    "name": "Doge",
+    "nameSlug": "doge",
+    "classFile": "DogeApp.ts",
+    "description": "Gets a doge meme based on text provided."
+}
