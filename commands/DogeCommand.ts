@@ -17,7 +17,8 @@ export class DogeCommand implements ISlashCommand {
         if (context.getArguments().length !== 0) {
           // Now check for appropriate split
           const args = context.getArguments().slice().join(' ');
-          const urlPart = args.replace(/[.!?,]/g, '/').replace(/[ ]/g, '');
+          let urlPart = args.replace(/[.!?,]/g, '/').replace(/[ ]/g, '');
+          urlPart = urlPart.toLowerCase();
           if (urlPart.indexOf('/') > -1) {
             successful = true;
             response = 'http://dogr.io/' + urlPart + '.png';
